@@ -1,2 +1,3 @@
 # Escludi il file .env
+node_modules/
 .env
