@@ -9,7 +9,12 @@ const pgp = require("pg-promise");
 app.use(bodyParser.json());
 
 // Abilita tutte le richieste CORS
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://binance-frontend.netlify.app", 
+  })
+);
+// app.use(cors());
 
 const dbHost = process.env.DB_HOST;
 const dbPort = process.env.DB_PORT;
