@@ -251,6 +251,6 @@ app.post("/insert-income", async (req, res) => {
 // inserisciCriptovaluteInDatabase(cryptoArray);
 
 // AVVIO SERVER
-// app.listen(port, () => {
-//   console.log(`Server is running on port ${port}`);
-// });
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
